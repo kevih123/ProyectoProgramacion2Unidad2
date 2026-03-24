@@ -26,6 +26,7 @@ namespace ProyectoProgramacion2Unidad2
             for (int i = 0; i < filas; i++)
             {
                 dvgAlumnos.Rows.Add();
+                dvgAlumnos.Rows[i].Cells["id_alumno"].Value = (i+1).ToString("D3");
             }
         }
 
