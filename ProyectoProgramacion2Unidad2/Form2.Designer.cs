@@ -30,20 +30,20 @@
         {
             lblTitulo = new Label();
             panel1 = new Panel();
-            lblSelID = new Label();
-            cmbID = new ComboBox();
-            btnGenerar = new Button();
-            picFoto = new PictureBox();
-            lblFecha = new Label();
-            btnRegresar = new Button();
-            btnCerrar = new Button();
-            lblID = new Label();
-            lblNombre = new Label();
-            lblApellido = new Label();
-            lblCorreo = new Label();
-            lblTelefono = new Label();
-            lblCarrera = new Label();
             lblSemestre = new Label();
+            lblCarrera = new Label();
+            lblTelefono = new Label();
+            lblCorreo = new Label();
+            lblApellido = new Label();
+            lblNombre = new Label();
+            lblID = new Label();
+            btnCerrar = new Button();
+            btnRegresar = new Button();
+            lblFecha = new Label();
+            btnGenerar = new Button();
+            cmbID = new ComboBox();
+            lblSelID = new Label();
+            picFoto = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFoto).BeginInit();
             SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ScrollBar;
+            panel1.BackColor = Color.FromArgb(11, 27, 60);
             panel1.BorderStyle = BorderStyle.Fixed3D;
             panel1.Controls.Add(lblSemestre);
             panel1.Controls.Add(lblCarrera);
@@ -84,126 +84,14 @@
             panel1.Size = new Size(747, 441);
             panel1.TabIndex = 7;
             // 
-            // lblSelID
+            // lblSemestre
             // 
-            lblSelID.AutoSize = true;
-            lblSelID.Location = new Point(14, 9);
-            lblSelID.Name = "lblSelID";
-            lblSelID.Size = new Size(154, 25);
-            lblSelID.TabIndex = 0;
-            lblSelID.Text = "Selecciona un ID";
-            // 
-            // cmbID
-            // 
-            cmbID.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbID.FlatStyle = FlatStyle.Popup;
-            cmbID.FormattingEnabled = true;
-            cmbID.Location = new Point(14, 37);
-            cmbID.Name = "cmbID";
-            cmbID.Size = new Size(133, 33);
-            cmbID.TabIndex = 1;
-            // 
-            // btnGenerar
-            // 
-            btnGenerar.BackColor = Color.FromArgb(11, 27, 60);
-            btnGenerar.FlatStyle = FlatStyle.Popup;
-            btnGenerar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnGenerar.ForeColor = Color.White;
-            btnGenerar.Location = new Point(107, 388);
-            btnGenerar.Name = "btnGenerar";
-            btnGenerar.Size = new Size(152, 44);
-            btnGenerar.TabIndex = 4;
-            btnGenerar.Text = "Generar Reporte";
-            btnGenerar.UseVisualStyleBackColor = false;
-            // 
-            // picFoto
-            // 
-            picFoto.Location = new Point(833, 1);
-            picFoto.Name = "picFoto";
-            picFoto.Size = new Size(80, 80);
-            picFoto.SizeMode = PictureBoxSizeMode.Zoom;
-            picFoto.TabIndex = 5;
-            picFoto.TabStop = false;
-            // 
-            // lblFecha
-            // 
-            lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(577, 9);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(62, 25);
-            lblFecha.TabIndex = 5;
-            lblFecha.Text = "Fecha";
-            // 
-            // btnRegresar
-            // 
-            btnRegresar.BackColor = Color.FromArgb(11, 27, 60);
-            btnRegresar.FlatStyle = FlatStyle.Popup;
-            btnRegresar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRegresar.ForeColor = Color.White;
-            btnRegresar.Location = new Point(299, 388);
-            btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(152, 44);
-            btnRegresar.TabIndex = 6;
-            btnRegresar.Text = "Regresar";
-            btnRegresar.UseVisualStyleBackColor = false;
-            // 
-            // btnCerrar
-            // 
-            btnCerrar.BackColor = Color.FromArgb(11, 27, 60);
-            btnCerrar.FlatStyle = FlatStyle.Popup;
-            btnCerrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCerrar.ForeColor = Color.White;
-            btnCerrar.Location = new Point(487, 388);
-            btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(152, 44);
-            btnCerrar.TabIndex = 7;
-            btnCerrar.Text = "Cerrar";
-            btnCerrar.UseVisualStyleBackColor = false;
-            // 
-            // lblID
-            // 
-            lblID.BackColor = SystemColors.Menu;
-            lblID.Location = new Point(107, 78);
-            lblID.Name = "lblID";
-            lblID.Size = new Size(532, 30);
-            lblID.TabIndex = 8;
-            lblID.Text = "ID";
-            // 
-            // lblNombre
-            // 
-            lblNombre.BackColor = SystemColors.Menu;
-            lblNombre.Location = new Point(107, 119);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(532, 30);
-            lblNombre.TabIndex = 9;
-            lblNombre.Text = "Nombre";
-            // 
-            // lblApellido
-            // 
-            lblApellido.BackColor = SystemColors.Menu;
-            lblApellido.Location = new Point(107, 163);
-            lblApellido.Name = "lblApellido";
-            lblApellido.Size = new Size(532, 30);
-            lblApellido.TabIndex = 10;
-            lblApellido.Text = "Apellido";
-            // 
-            // lblCorreo
-            // 
-            lblCorreo.BackColor = SystemColors.Menu;
-            lblCorreo.Location = new Point(107, 206);
-            lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(532, 30);
-            lblCorreo.TabIndex = 11;
-            lblCorreo.Text = "Correo";
-            // 
-            // lblTelefono
-            // 
-            lblTelefono.BackColor = SystemColors.Menu;
-            lblTelefono.Location = new Point(105, 249);
-            lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(532, 30);
-            lblTelefono.TabIndex = 12;
-            lblTelefono.Text = "Telefono";
+            lblSemestre.BackColor = SystemColors.Menu;
+            lblSemestre.Location = new Point(105, 335);
+            lblSemestre.Name = "lblSemestre";
+            lblSemestre.Size = new Size(532, 30);
+            lblSemestre.TabIndex = 14;
+            lblSemestre.Text = "Semestre";
             // 
             // lblCarrera
             // 
@@ -214,14 +102,128 @@
             lblCarrera.TabIndex = 13;
             lblCarrera.Text = "Carrera";
             // 
-            // lblSemestre
+            // lblTelefono
             // 
-            lblSemestre.BackColor = SystemColors.Menu;
-            lblSemestre.Location = new Point(105, 335);
-            lblSemestre.Name = "lblSemestre";
-            lblSemestre.Size = new Size(532, 30);
-            lblSemestre.TabIndex = 14;
-            lblSemestre.Text = "Semestre";
+            lblTelefono.BackColor = SystemColors.Menu;
+            lblTelefono.Location = new Point(105, 249);
+            lblTelefono.Name = "lblTelefono";
+            lblTelefono.Size = new Size(532, 30);
+            lblTelefono.TabIndex = 12;
+            lblTelefono.Text = "Telefono";
+            // 
+            // lblCorreo
+            // 
+            lblCorreo.BackColor = SystemColors.Menu;
+            lblCorreo.Location = new Point(107, 206);
+            lblCorreo.Name = "lblCorreo";
+            lblCorreo.Size = new Size(532, 30);
+            lblCorreo.TabIndex = 11;
+            lblCorreo.Text = "Correo";
+            // 
+            // lblApellido
+            // 
+            lblApellido.BackColor = SystemColors.Menu;
+            lblApellido.Location = new Point(107, 163);
+            lblApellido.Name = "lblApellido";
+            lblApellido.Size = new Size(532, 30);
+            lblApellido.TabIndex = 10;
+            lblApellido.Text = "Apellido";
+            // 
+            // lblNombre
+            // 
+            lblNombre.BackColor = SystemColors.Menu;
+            lblNombre.Location = new Point(107, 119);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(532, 30);
+            lblNombre.TabIndex = 9;
+            lblNombre.Text = "Nombre";
+            // 
+            // lblID
+            // 
+            lblID.BackColor = SystemColors.Menu;
+            lblID.Location = new Point(107, 78);
+            lblID.Name = "lblID";
+            lblID.Size = new Size(532, 30);
+            lblID.TabIndex = 8;
+            lblID.Text = "ID";
+            // 
+            // btnCerrar
+            // 
+            btnCerrar.BackColor = Color.FromArgb(255, 122, 0);
+            btnCerrar.FlatStyle = FlatStyle.Popup;
+            btnCerrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCerrar.ForeColor = Color.White;
+            btnCerrar.Location = new Point(487, 386);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(152, 44);
+            btnCerrar.TabIndex = 7;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = false;
+            // 
+            // btnRegresar
+            // 
+            btnRegresar.BackColor = Color.FromArgb(255, 122, 0);
+            btnRegresar.FlatStyle = FlatStyle.Popup;
+            btnRegresar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegresar.ForeColor = Color.White;
+            btnRegresar.Location = new Point(299, 386);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(152, 44);
+            btnRegresar.TabIndex = 6;
+            btnRegresar.Text = "Regresar";
+            btnRegresar.UseVisualStyleBackColor = false;
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.ForeColor = Color.White;
+            lblFecha.Location = new Point(636, 9);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(62, 25);
+            lblFecha.TabIndex = 5;
+            lblFecha.Text = "Fecha";
+            // 
+            // btnGenerar
+            // 
+            btnGenerar.BackColor = Color.FromArgb(255, 122, 0);
+            btnGenerar.FlatStyle = FlatStyle.Popup;
+            btnGenerar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnGenerar.ForeColor = Color.White;
+            btnGenerar.Location = new Point(107, 386);
+            btnGenerar.Name = "btnGenerar";
+            btnGenerar.Size = new Size(152, 44);
+            btnGenerar.TabIndex = 4;
+            btnGenerar.Text = "Generar Reporte";
+            btnGenerar.UseVisualStyleBackColor = false;
+            // 
+            // cmbID
+            // 
+            cmbID.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbID.FlatStyle = FlatStyle.Popup;
+            cmbID.FormattingEnabled = true;
+            cmbID.Location = new Point(174, 9);
+            cmbID.Name = "cmbID";
+            cmbID.Size = new Size(184, 33);
+            cmbID.TabIndex = 1;
+            // 
+            // lblSelID
+            // 
+            lblSelID.AutoSize = true;
+            lblSelID.ForeColor = Color.White;
+            lblSelID.Location = new Point(14, 9);
+            lblSelID.Name = "lblSelID";
+            lblSelID.Size = new Size(154, 25);
+            lblSelID.TabIndex = 0;
+            lblSelID.Text = "Selecciona un ID";
+            // 
+            // picFoto
+            // 
+            picFoto.Location = new Point(833, 1);
+            picFoto.Name = "picFoto";
+            picFoto.Size = new Size(80, 80);
+            picFoto.SizeMode = PictureBoxSizeMode.Zoom;
+            picFoto.TabIndex = 5;
+            picFoto.TabStop = false;
             // 
             // Form2
             // 
