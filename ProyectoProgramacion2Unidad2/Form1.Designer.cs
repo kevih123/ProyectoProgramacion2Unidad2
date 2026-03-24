@@ -38,9 +38,9 @@
             btnCerrar = new Button();
             btnReporte = new Button();
             panel1 = new Panel();
+            btnCrear = new Button();
             label1 = new Label();
             lblTitulo = new Label();
-            btnCrear = new Button();
             ((System.ComponentModel.ISupportInitialize)dvgAlumnos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudFilas).BeginInit();
             panel1.SuspendLayout();
@@ -108,6 +108,7 @@
             btnCerrar.TabIndex = 2;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // btnReporte
             // 
@@ -135,6 +136,20 @@
             panel1.Size = new Size(891, 153);
             panel1.TabIndex = 4;
             // 
+            // btnCrear
+            // 
+            btnCrear.BackColor = Color.FromArgb(255, 122, 0);
+            btnCrear.FlatStyle = FlatStyle.Flat;
+            btnCrear.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCrear.ForeColor = Color.White;
+            btnCrear.Location = new Point(252, 104);
+            btnCrear.Name = "btnCrear";
+            btnCrear.Size = new Size(109, 36);
+            btnCrear.TabIndex = 5;
+            btnCrear.Text = "Crear Tabla";
+            btnCrear.UseVisualStyleBackColor = false;
+            btnCrear.Click += btnCrear_Click;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -158,19 +173,6 @@
             lblTitulo.TabIndex = 5;
             lblTitulo.Text = "Práctica 3 -Registro de Alumnos";
             lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // btnCrear
-            // 
-            btnCrear.BackColor = Color.FromArgb(255, 122, 0);
-            btnCrear.FlatStyle = FlatStyle.Flat;
-            btnCrear.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCrear.ForeColor = Color.White;
-            btnCrear.Location = new Point(252, 104);
-            btnCrear.Name = "btnCrear";
-            btnCrear.Size = new Size(109, 36);
-            btnCrear.TabIndex = 5;
-            btnCrear.Text = "Crear Tabla";
-            btnCrear.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
