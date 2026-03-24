@@ -56,7 +56,7 @@
             lblTitulo.ForeColor = SystemColors.ButtonFace;
             lblTitulo.Location = new Point(0, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(915, 65);
+            lblTitulo.Size = new Size(1046, 87);
             lblTitulo.TabIndex = 6;
             lblTitulo.Text = "Reporte de Alumno";
             lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,71 +79,72 @@
             panel1.Controls.Add(cmbID);
             panel1.Controls.Add(lblSelID);
             panel1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            panel1.Location = new Point(83, 80);
+            panel1.Location = new Point(95, 107);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(747, 441);
+            panel1.Size = new Size(853, 601);
             panel1.TabIndex = 7;
             // 
             // lblSemestre
             // 
             lblSemestre.BackColor = SystemColors.Menu;
-            lblSemestre.Location = new Point(105, 335);
+            lblSemestre.Location = new Point(120, 447);
             lblSemestre.Name = "lblSemestre";
-            lblSemestre.Size = new Size(532, 30);
+            lblSemestre.Size = new Size(608, 40);
             lblSemestre.TabIndex = 14;
             lblSemestre.Text = "Semestre";
             // 
             // lblCarrera
             // 
             lblCarrera.BackColor = SystemColors.Menu;
-            lblCarrera.Location = new Point(105, 292);
+            lblCarrera.Location = new Point(120, 389);
             lblCarrera.Name = "lblCarrera";
-            lblCarrera.Size = new Size(532, 30);
+            lblCarrera.Size = new Size(608, 40);
             lblCarrera.TabIndex = 13;
             lblCarrera.Text = "Carrera";
             // 
             // lblTelefono
             // 
             lblTelefono.BackColor = SystemColors.Menu;
-            lblTelefono.Location = new Point(105, 249);
+            lblTelefono.Location = new Point(120, 332);
             lblTelefono.Name = "lblTelefono";
-            lblTelefono.Size = new Size(532, 30);
+            lblTelefono.Size = new Size(608, 40);
             lblTelefono.TabIndex = 12;
             lblTelefono.Text = "Telefono";
             // 
             // lblCorreo
             // 
             lblCorreo.BackColor = SystemColors.Menu;
-            lblCorreo.Location = new Point(107, 206);
+            lblCorreo.Location = new Point(122, 275);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new Size(532, 30);
+            lblCorreo.Size = new Size(608, 40);
             lblCorreo.TabIndex = 11;
             lblCorreo.Text = "Correo";
             // 
             // lblApellido
             // 
             lblApellido.BackColor = SystemColors.Menu;
-            lblApellido.Location = new Point(107, 163);
+            lblApellido.Location = new Point(122, 217);
             lblApellido.Name = "lblApellido";
-            lblApellido.Size = new Size(532, 30);
+            lblApellido.Size = new Size(608, 40);
             lblApellido.TabIndex = 10;
             lblApellido.Text = "Apellido";
             // 
             // lblNombre
             // 
             lblNombre.BackColor = SystemColors.Menu;
-            lblNombre.Location = new Point(107, 119);
+            lblNombre.Location = new Point(122, 159);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(532, 30);
+            lblNombre.Size = new Size(608, 40);
             lblNombre.TabIndex = 9;
             lblNombre.Text = "Nombre";
             // 
             // lblID
             // 
             lblID.BackColor = SystemColors.Menu;
-            lblID.Location = new Point(107, 78);
+            lblID.Location = new Point(122, 104);
             lblID.Name = "lblID";
-            lblID.Size = new Size(532, 30);
+            lblID.Size = new Size(608, 40);
             lblID.TabIndex = 8;
             lblID.Text = "ID";
             // 
@@ -153,9 +154,10 @@
             btnCerrar.FlatStyle = FlatStyle.Popup;
             btnCerrar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCerrar.ForeColor = Color.White;
-            btnCerrar.Location = new Point(487, 386);
+            btnCerrar.Location = new Point(557, 515);
+            btnCerrar.Margin = new Padding(3, 4, 3, 4);
             btnCerrar.Name = "btnCerrar";
-            btnCerrar.Size = new Size(152, 44);
+            btnCerrar.Size = new Size(174, 74);
             btnCerrar.TabIndex = 7;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = false;
@@ -166,9 +168,10 @@
             btnRegresar.FlatStyle = FlatStyle.Popup;
             btnRegresar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRegresar.ForeColor = Color.White;
-            btnRegresar.Location = new Point(299, 386);
+            btnRegresar.Location = new Point(342, 515);
+            btnRegresar.Margin = new Padding(3, 4, 3, 4);
             btnRegresar.Name = "btnRegresar";
-            btnRegresar.Size = new Size(152, 44);
+            btnRegresar.Size = new Size(174, 74);
             btnRegresar.TabIndex = 6;
             btnRegresar.Text = "Regresar";
             btnRegresar.UseVisualStyleBackColor = false;
@@ -177,9 +180,9 @@
             // 
             lblFecha.AutoSize = true;
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(636, 9);
+            lblFecha.Location = new Point(727, 12);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(62, 25);
+            lblFecha.Size = new Size(77, 32);
             lblFecha.TabIndex = 5;
             lblFecha.Text = "Fecha";
             // 
@@ -189,9 +192,10 @@
             btnGenerar.FlatStyle = FlatStyle.Popup;
             btnGenerar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenerar.ForeColor = Color.White;
-            btnGenerar.Location = new Point(107, 386);
+            btnGenerar.Location = new Point(122, 515);
+            btnGenerar.Margin = new Padding(3, 4, 3, 4);
             btnGenerar.Name = "btnGenerar";
-            btnGenerar.Size = new Size(152, 44);
+            btnGenerar.Size = new Size(174, 74);
             btnGenerar.TabIndex = 4;
             btnGenerar.Text = "Generar Reporte";
             btnGenerar.UseVisualStyleBackColor = false;
@@ -201,38 +205,41 @@
             cmbID.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbID.FlatStyle = FlatStyle.Popup;
             cmbID.FormattingEnabled = true;
-            cmbID.Location = new Point(174, 9);
+            cmbID.Location = new Point(225, 12);
+            cmbID.Margin = new Padding(3, 4, 3, 4);
             cmbID.Name = "cmbID";
-            cmbID.Size = new Size(184, 33);
+            cmbID.Size = new Size(210, 40);
             cmbID.TabIndex = 1;
             // 
             // lblSelID
             // 
             lblSelID.AutoSize = true;
             lblSelID.ForeColor = Color.White;
-            lblSelID.Location = new Point(14, 9);
+            lblSelID.Location = new Point(16, 12);
             lblSelID.Name = "lblSelID";
-            lblSelID.Size = new Size(154, 25);
+            lblSelID.Size = new Size(194, 32);
             lblSelID.TabIndex = 0;
             lblSelID.Text = "Selecciona un ID";
             // 
             // picFoto
             // 
-            picFoto.Location = new Point(833, 1);
+            picFoto.Location = new Point(952, 1);
+            picFoto.Margin = new Padding(3, 4, 3, 4);
             picFoto.Name = "picFoto";
-            picFoto.Size = new Size(80, 80);
+            picFoto.Size = new Size(91, 107);
             picFoto.SizeMode = PictureBoxSizeMode.Zoom;
             picFoto.TabIndex = 5;
             picFoto.TabStop = false;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(915, 533);
+            ClientSize = new Size(1046, 711);
             Controls.Add(picFoto);
             Controls.Add(panel1);
             Controls.Add(lblTitulo);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
             Text = "Form2";
             panel1.ResumeLayout(false);
