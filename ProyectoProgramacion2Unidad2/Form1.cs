@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace ProyectoProgramacion2Unidad2
 {
     public partial class Form1 : Form
@@ -6,6 +8,8 @@ namespace ProyectoProgramacion2Unidad2
         public Form1()
         {
             InitializeComponent();
+            //Conectar el evento cell validating y sobreescribir
+            dvgAlumnos.CellValidating += dvgAlumnos_CellValidating;
         }
 
         private void btnCrear_Click(object sender, EventArgs e)
@@ -37,6 +41,27 @@ namespace ProyectoProgramacion2Unidad2
 
             if (respuesta == DialogResult.Yes) { 
                 this.Close();
+            }
+        }
+
+        private void dvgAlumnos_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            if (dvgAlumnos.Columns[e.ColumnIndex].Name == "telefono")
+            {
+                //if (dvgAlumnos.Rows[e.RowIndex].IsNewRow) return;
+
+                char resultado;
+                string valor = e.FormattedValue.ToString();
+                
+                if (!char.TryParse(valor, out resultado) || resultado < 0)
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Solo se permite números enteros.", "Valor inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    dvgAlumnos.Rows[e.RowIndex].ErrorText = String.Empty;
+                }
             }
         }
     }
