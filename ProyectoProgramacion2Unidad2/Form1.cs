@@ -50,10 +50,10 @@ namespace ProyectoProgramacion2Unidad2
             {
                 //if (dvgAlumnos.Rows[e.RowIndex].IsNewRow) return;
 
-                char resultado;
+                int resultado;
                 string valor = e.FormattedValue.ToString();
                 
-                if (!char.TryParse(valor, out resultado) || resultado < 0)
+                if (!int.TryParse(valor, out resultado) || resultado < 0)
                 {
                     e.Cancel = true;
                     MessageBox.Show("Solo se permite números enteros.", "Valor inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
