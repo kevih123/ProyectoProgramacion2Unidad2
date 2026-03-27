@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace ProyectoProgramacion2Unidad2
 {
@@ -14,7 +15,7 @@ namespace ProyectoProgramacion2Unidad2
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            
+
             filas = (int)nudFilas.Value;
             dvgAlumnos.Rows.Clear();
             dvgAlumnos.ReadOnly = false;
@@ -30,7 +31,7 @@ namespace ProyectoProgramacion2Unidad2
             for (int i = 0; i < filas; i++)
             {
                 dvgAlumnos.Rows.Add();
-                dvgAlumnos.Rows[i].Cells["id_alumno"].Value = (i+1).ToString("D3");
+                dvgAlumnos.Rows[i].Cells["id_alumno"].Value = (i + 1).ToString("D3");
             }
         }
 
@@ -39,7 +40,8 @@ namespace ProyectoProgramacion2Unidad2
             DialogResult respuesta = MessageBox.Show(
                 "¿Estas seguro que deseas cerrar?", "Confirmar Cierre", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (respuesta == DialogResult.Yes) { 
+            if (respuesta == DialogResult.Yes)
+            {
                 this.Close();
             }
         }
@@ -52,7 +54,7 @@ namespace ProyectoProgramacion2Unidad2
 
                 long resultado;
                 string valor = e.FormattedValue.ToString();
-                
+
                 if (!long.TryParse(valor, out resultado) || resultado < 0)
                 {
                     e.Cancel = true;
@@ -63,6 +65,38 @@ namespace ProyectoProgramacion2Unidad2
                     dvgAlumnos.Rows[e.RowIndex].ErrorText = String.Empty;
                 }
             }
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            
+            // crear una lista para almacenar a todos los alumnos
+            List<List<object>> lista_alumnos = new List<List<object>>();
+
+            foreach (DataGridViewRow fila in dvgAlumnos.Rows)
+            {
+                if (!fila.IsNewRow)
+                {
+                    // crear una lista para almacenar los datos de los alumnos
+                    List<object> datos_alumno = new List<object>();
+
+                    //agregar los datos del alumno a la lista de datos_alumno
+                    datos_alumno.Add(fila.Cells["id_alumno"].Value);
+                    datos_alumno.Add(fila.Cells["nombre_alumn"].Value);
+                    datos_alumno.Add(fila.Cells["apellido"].Value);
+                    datos_alumno.Add(fila.Cells["correo"].Value);
+                    datos_alumno.Add(fila.Cells["telefono"].Value);
+
+
+                    // agregar la lista de datos_alumno a la lista de alumnos
+                    lista_alumnos.Add(datos_alumno);
+
+                }
+            }
+
+            Form2 form2 = new Form2(lista_alumnos);
+            form2.ShowDialog(); // ShowDialog = modal (bloquea Form1 mientras está abierto)
+
         }
     }
 }

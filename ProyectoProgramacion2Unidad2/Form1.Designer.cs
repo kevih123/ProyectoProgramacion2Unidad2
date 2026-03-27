@@ -122,6 +122,7 @@
             btnReporte.TabIndex = 3;
             btnReporte.Text = "Ver Reporte";
             btnReporte.UseVisualStyleBackColor = false;
+            btnReporte.Click += btnReporte_Click;
             // 
             // panel1
             // 
