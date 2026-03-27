@@ -2,6 +2,7 @@ namespace ProyectoProgramacion2Unidad2
 {
     public partial class Form1 : Form
     {
+        int filas = 0;
         public Form1()
         {
             InitializeComponent();
