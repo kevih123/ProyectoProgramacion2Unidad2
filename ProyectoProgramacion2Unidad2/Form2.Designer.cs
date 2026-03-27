@@ -161,6 +161,7 @@
             btnCerrar.TabIndex = 7;
             btnCerrar.Text = "Cerrar";
             btnCerrar.UseVisualStyleBackColor = false;
+            btnCerrar.Click += btnCerrar_Click;
             // 
             // btnRegresar
             // 
@@ -175,16 +176,17 @@
             btnRegresar.TabIndex = 6;
             btnRegresar.Text = "Regresar";
             btnRegresar.UseVisualStyleBackColor = false;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // lblFecha
             // 
-            lblFecha.AutoSize = true;
             lblFecha.ForeColor = Color.White;
-            lblFecha.Location = new Point(727, 12);
+            lblFecha.Location = new Point(474, 20);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(77, 32);
+            lblFecha.Size = new Size(346, 32);
             lblFecha.TabIndex = 5;
             lblFecha.Text = "Fecha";
+            lblFecha.TextAlign = ContentAlignment.TopRight;
             // 
             // btnGenerar
             // 
@@ -192,13 +194,14 @@
             btnGenerar.FlatStyle = FlatStyle.Popup;
             btnGenerar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenerar.ForeColor = Color.White;
-            btnGenerar.Location = new Point(122, 515);
+            btnGenerar.Location = new Point(120, 515);
             btnGenerar.Margin = new Padding(3, 4, 3, 4);
             btnGenerar.Name = "btnGenerar";
-            btnGenerar.Size = new Size(174, 74);
+            btnGenerar.Size = new Size(187, 74);
             btnGenerar.TabIndex = 4;
             btnGenerar.Text = "Generar Reporte";
             btnGenerar.UseVisualStyleBackColor = false;
+            btnGenerar.Click += btnGenerar_Click;
             // 
             // cmbID
             // 
@@ -223,10 +226,10 @@
             // 
             // picFoto
             // 
-            picFoto.Location = new Point(952, 1);
+            picFoto.Location = new Point(959, 0);
             picFoto.Margin = new Padding(3, 4, 3, 4);
             picFoto.Name = "picFoto";
-            picFoto.Size = new Size(91, 107);
+            picFoto.Size = new Size(87, 87);
             picFoto.SizeMode = PictureBoxSizeMode.Zoom;
             picFoto.TabIndex = 5;
             picFoto.TabStop = false;
