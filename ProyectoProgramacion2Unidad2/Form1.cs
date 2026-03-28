@@ -28,7 +28,7 @@ namespace ProyectoProgramacion2Unidad2
             for (int i = 0; i < filas; i++)
             {
                 dvgAlumnos.Rows.Add();
-                dvgAlumnos.Rows[i].Cells["id_alumno"].Value = (i + 1).ToString("D3");
+                dvgAlumnos.Rows[i].Cells["id_alumno"].Value = (i + 1).ToString("D3"); //Id automatico 
             }
         }
 
@@ -56,6 +56,19 @@ namespace ProyectoProgramacion2Unidad2
                 {
                     e.Cancel = true;
                     MessageBox.Show("Solo se permite números enteros.", "Valor inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    dvgAlumnos.Rows[e.RowIndex].ErrorText = String.Empty;
+                }
+            }
+            if (dvgAlumnos.Columns[e.ColumnIndex].Name == "semestre")
+            {
+                char resultado;
+                if (!char.TryParse(e.FormattedValue.ToString(), out resultado) ||  resultado < 0)
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Solo se permite números enteros de un digito.", "Valor inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
